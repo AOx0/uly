@@ -9,7 +9,7 @@ cargo install --git https://github.com/AOx0/uly
 
 ## Usage
 ```
-uly 1.0.0
+uly 1.0.1
 Create local Ulysses documents from the terminal
 
 USAGE:

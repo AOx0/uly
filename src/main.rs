@@ -23,13 +23,15 @@ fn main() {
         if !do_not_open {
             name.open_file();
         }
-    } else if let Commands::Open { file, create } = app.command {
+    } else if let Commands::UlyssesOpen { file, create } = app.command {
         let file = file.gen_name();
 
         if create {
             file.create_file(false).unwrap_or_else(|_| {})
         };
 
+        file.open_file();
+    } else if let Commands::Open { file } = app.command {
         file.open_file();
     }
 }

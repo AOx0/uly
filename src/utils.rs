@@ -47,7 +47,7 @@ impl Util for String {
     }
 
     fn open_file(&self) {
-        let mut command = shell(format!("open -a Ulysses {}", self));
+        let mut command = shell(format!("open -a UlyssesMac {}", self));
 
         command.stdout(Stdio::piped());
         command.stderr(Stdio::piped());
